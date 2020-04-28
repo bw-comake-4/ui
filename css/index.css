@@ -122,7 +122,7 @@ nav h1 {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  margin-top: 3.3rem;
+  margin-top: 6rem;
   padding-left: 1rem;
 }
 #subcontent-01 {
@@ -145,8 +145,8 @@ nav h1 {
   align-items: center;
   margin-top: 1.6rem;
   width: 77%;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
   border: 0;
   line-height: 1.6;
   font-size: 1rem;
@@ -171,6 +171,58 @@ nav h1 {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-evenly;
+}
+#section-04 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+#section-04 button {
+  width: 30%;
+  color: white;
+  background: #00932A;
+  align-items: center;
+  margin-top: 1.6rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+footer {
+  background: #333;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+}
+footer h4 {
+  font-size: 1rem;
+  padding-bottom: 0.6rem;
+}
+footer ul {
+  list-style-type: none;
+  color: #bbb;
+  font-size: 9;
+}
+footer .sub-footer {
+  justify-content: right;
+}
+footer #footer-content {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+#sub-footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+#logo {
+  width: 40%;
+}
+.sub-footer {
+  width: 20%;
 }
 @font-face {
   font-family: 'Roboto';
