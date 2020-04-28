@@ -1,0 +1,19 @@
+// Mixins
+// home-page.less - btn:hover selector
+.button-hover-color(){
+  color: #7ab436;
+  background: white;
+}
+
+// Parametric Mixin
+// home-page.less - body selector
+.fonts(@font-fam, @l-height){
+  font-family: @font-family;
+  line-height: @l-height;  
+}
+
+// home-page.less = .btn selector
+.button-color(@font-color, @bg-color){
+  color: @font-color;
+  background-color: @primary-color-logo;
+}

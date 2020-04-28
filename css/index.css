@@ -1,10 +1,198 @@
-#container {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-img   {
+nav {
+  display: flex;
+  align-items: center;
+  width: auto;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+  padding-bottom: 0.3rem;
+}
+h1 {
+  color: #00932A;
+  font-size: 1.8rem;
+  font-stretch: expanded;
+}
+nav a {
+  text-decoration: none;
+  padding-right: 1rem;
+  color: #555;
+}
+nav h1 {
+  padding-left: 1rem;
+  text-shadow: 0.3px 0.3px 0.3px #333;
+}
+#navbar {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.sign-up {
+  background: #00932A;
+  text-align: center;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  color: white;
+}
+#showcase {
+  background: #333 url('../img/image1.jpg') no-repeat center center / cover;
+  color: #fff;
+  padding-top: 36rem;
+}
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 102%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5rem;
+  /* Overlay */
+  position: absolute;
+  top: 82px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#showcase .showcase-content p.l-heading {
+  font-size: 3rem;
+  font-weight: lighter;
+  line-height: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-top: 12rem;
+  text-shadow: 2px 2px 3px #000;
+  padding-bottom: 3rem;
+}
+#showcase .showcase-content #showcase-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.3rem 1rem;
+}
+#showcase .showcase-content #showcase-box .connect {
+  padding-bottom: 0.6rem;
+  text-shadow: 2px 2px 3px #000;
+  font-weight: lighter;
+  text-align: left;
+}
+#showcase .showcase-content #showcase-box .address {
+  width: 500px;
+  line-height: 1.6rem;
+  padding-left: 0.6rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-size: 1rem;
+}
+#showcase .showcase-content #showcase-box .apt {
+  width: 60px;
+  line-height: 1.6rem;
+  padding-left: 0.6rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-size: 1rem;
+}
+#showcase .showcase-content #showcase-box .email {
+  width: 280px;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  padding-left: 0.6rem;
+  margin-top: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+#showcase .showcase-content #showcase-box button.join {
+  background: #00932A;
+  color: white;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  width: 280px;
+  border: 0;
+}
+#main-content {
+  display: flex;
   width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 3.3rem;
+  padding-left: 1rem;
+}
+#subcontent-01 {
+  width: 50%;
+}
+#subcontent-01 h3 {
+  line-height: 2rem;
+  font-weight: lighter;
+  font-size: 1.6rem;
+  color: #444;
+  padding-bottom: 1.6rem;
+}
+#subcontent-01 p {
+  color: #555;
+  margin-right: 7rem;
+}
+#subcontent-01 button {
+  color: white;
+  background: #00932A;
+  align-items: center;
+  margin-top: 1.6rem;
+  width: 77%;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border: 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+#subcontent-02 {
+  width: 50%;
+  display: block;
+  padding-bottom: 9rem;
+}
+#subcontent-03 {
+  background: #ddd;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+#subcontent-03 img {
+  height: 6vh;
+}
+#subcontent-03a {
+  display: flex;
+  text-align: center;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZKCM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVl2ZhZI2eCN5jzbjEETS9weq8-59U.ttf) format('truetype');
+}
+body {
+  font-family: 'Roboto';
+  line-height: 1.3;
 }

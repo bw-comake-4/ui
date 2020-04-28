@@ -2,37 +2,120 @@
 
 <html>
    <head>
-      <title>change picture</title>
-      <script type = "text/javascript">
-          function displayNextImage() {
-              x = (x === images.length - 1) ? 0 : x + 1;
-              document.getElementById("img").src = images[x];
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/162cd45532.js" crossorigin="anonymous"></script>
 
-          function displayPreviousImage() {
-              x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("img").src = images[x];
-          }
+    
+    <title>Co-Make4 | Home Page</title>
+    <!-- <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("img").src = images[x];
+        }
 
-          function startTimer() {
-              setInterval(displayNextImage, 3000);
-          }
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("img").src = images[x];
+        }
 
-          var images = [], x = -1;
-          images[0] = "./img/image1.jpg";
-          images[1] = "./img/image2.jpg";
-          images[2] = "./img/image3.jpg";
-          images[3] = "./img/image4.jpg";
-        
-      </script>
-      <link rel="stylesheet" type="text/css" href="./css/index.css">
+        function startTimer() {
+            setInterval(displayNextImage, 3000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "./img/image1.jpg";
+        images[1] = "./img/image2.jpg";
+        images[2] = "./img/image3.jpg";
+        images[3] = "./img/image4.jpg";
+    
+    </script> -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
    </head>
 
-   <body onload = "startTimer()">
-    <div id = "container">
-      <img id="img" src="startpicture.jpg"/>
-      <button type="button" onclick="displayPreviousImage()">Previous</button>
-      <button type="button" onclick="displayNextImage()">Next</button>
+   <!-- <body onload = "startTimer()"> -->
+     <body>
+    <div id='navbar'>
+      <nav>
+        <h1><id class="fas fa-chalkboard-teacher"></id> Co-<i>Make4</i></h1>
+        <div id="navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="login.html">Log in</a>
+          <a href="signup.html" class="sign-up">Sign up</a>
+        </div>
+      </nav>
+      
     </div>
+
+    <!-- <img id="img" src="startpicture.jpg"/> -->
+
+      <!-- Header: Showcase -->
+  <header id="showcase">
+    <div class="showcase-content">
+      <p class="l-heading shadow-one">
+        Connect with your neighborhood
+      </p>
+      <div id="showcase-box">
+        <p class="connect">Co-<i>Make4</i> is available in your neighborhood</p>
+        <input type="text" class="address" placeholder="Address"/>
+        <input type="text" class="apt" placeholder="Apt"/><br />
+        <input type="text" class="email" placeholder="Email address"/>
+        <button class="join">Join the neighborhood</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="main-content">
+      <div id="subcontent-01">
+        <h3>Co-Make4 is your local hub<br />
+        to connect and share with<br />
+        the neighborhood.</h3>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, saepe. Reiciendis, atque. Laudantium ipsa in rem, amet illo quia iure maxime temporibus sunt cumque, quidem quas facilis. Ex, deleniti perferendis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ad non amet ipsam mollitia. At voluptatibus repellat dolore incidunt nisi nemo culpa alias! Sunt reiciendis, mollitia magnam eos doloribus nobis?</p>
+      
+
+        <button>Join the neighborhood</button>
+      </div>
+
+      <img src="./img/capture.jpg" id="subcontent-02">
+
+
+    </div>
+
+  </main>
+
+  <div id="subcontent-03">
+    <div id="subcontent-03a">
+      <div class="subcontent-03-1">
+        <img src="./img/essential.png" />
+        <p>The only way to iunstantly connect with<br /> neighbors, local business, agencies,<br /> and more</p>
+      </div>
+
+      <div class="subcontent-03-1">
+        <img src="./img/local.png" />
+        <p>Instant access to a private community,<br /> your neighborhood.</p>
+      </div>
+
+      <div class="subcontent-03-1">
+        <img src="./img/trusted.png" />
+        <p>A secure environment whera all<br /> neighbors are verified.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="section-04">
+    <h3>Welcome, neighbor</h3>
+
+  </div>
+
+
+
+
+
    </body>
+
+
 </html>
