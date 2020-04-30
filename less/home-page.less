@@ -1,0 +1,281 @@
+#logo {
+  color: @primary-color;
+}
+
+#showcase {
+  background: #333 url('../img/image1.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding-top: 36rem;
+
+  .showcase-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 102%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    position: absolute;
+    top: 82px;
+    left:0;
+    right: 0;
+    bottom: 0;
+
+    p.l-heading {
+      font-size: 3rem;
+      font-weight: lighter;
+      line-height: 25px;
+      font-family: @roboto-condensed; 
+      padding-top: 12rem;
+      padding-bottom: 3rem;
+    }
+
+    #showcase-box {
+      background-color: rgba(0,0,0,0.3);
+      padding: 1.3rem 1rem;
+
+      .connect {
+        padding-bottom: 0.6rem;
+        text-shadow: 2px 2px 3px #000;
+        font-weight: lighter;
+        text-align: left;
+      }
+
+      .address {
+        width: 500px;
+        line-height: 1.6rem;
+        padding-left: 0.6rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        font-size: 1rem;
+      }
+
+      .apt {
+        width: 60px;
+        line-height: 1.6rem;
+        padding-left: 0.6rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        font-size: 1rem;
+      }
+
+      .email {
+        width: 280px;
+        line-height: 1.6rem;
+        font-size: 1rem;
+        padding-left: 0.6rem;
+        margin-top: 0.3rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+      }
+
+      button.join {
+        background: @primary-color;
+        color: white;
+        line-height: 1.6rem;
+        font-size: 1rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        width: 280px;
+        border: 0;
+      }
+    }
+  }
+}
+
+#main-content {
+  display: flex;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 6rem;
+  padding-left: 1rem;
+}
+
+#subcontent-01 {
+  width: 50%;
+
+  h3 {
+    line-height: 2rem;
+    font-weight: lighter;
+    font-size: 1.6rem;
+    color: #444;
+    padding-bottom: 1.6rem;
+  }
+
+  p {
+    color: #555;
+    margin-right: 7rem;
+  }
+
+  button {
+    color: white;
+    background: @primary-color;
+    align-items: center;
+    margin-top: 1.6rem;
+    width: 77%;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+}
+
+#subcontent-02 {
+  width: 50%;
+  display: block;
+  padding-bottom: 9rem;
+}
+
+#subcontent-03 {
+  background: #ddd;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+
+  img   {
+    height: 6vh;
+  }
+}
+
+#subcontent-03a {
+  display: flex;
+  text-align: center;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+}
+
+#section-04 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+
+  button {
+    width: 30%;
+    color: white;
+    background: @primary-color;
+    align-items: center;
+    margin-top: 1.6rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+}
+
+@media @mobile {
+
+  #showcase {
+    margin: 0 auto;
+    width: 500px;
+  
+    .showcase-content {
+      padding-top: 13rem;
+
+      p.l-heading {
+        font-size: 1.6rem;
+        padding-bottom: 3rem;
+      }
+
+      #showcase-box {
+        flex-direction: row;
+        width: 450px;
+        background-color: rgba(0,0,0,0.3);
+
+        .address {
+        width: 100%;
+        }
+        
+        .apt {
+          width: 100%;
+          flex-direction: row;
+      
+        }
+
+        .email  {
+          width: 100%;
+        
+        }
+
+        .connect {
+          text-align: center;
+        }
+
+        button.join   {
+          margin-top: 0.5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #main-content {
+    width: 500px;
+    margin-top: 2rem;
+
+    #subcontent-01 {
+      padding: 0;
+      margin: 0 auto;
+      width: 500px;
+
+      h3 {
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      p {
+        text-align: left;
+        margin: 0 auto;
+        padding-right: 1.5rem;
+      }
+
+      button {
+        width: 93%;
+        margin-bottom: 1rem;
+      }
+    }
+
+    #subcontent-02 {
+      display: none;
+    }
+  }
+
+  #subcontent-03 {
+    display: none;
+  }
+
+  #section-04 img {
+    width: 450px;
+  }
+
+  #section-04 button {
+    display: none;
+  }
+
+  footer {
+
+    #footer-content {
+
+      h1 {
+        display: none;
+      }
+
+      #sub-footer-content {
+        width: 400px;
+        justify-content: space-between
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

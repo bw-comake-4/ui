@@ -1,0 +1,21 @@
+// Mixins
+// navigation.less - a{}
+.anchor-hover-border(){
+  border-bottom: 2px solid #ddd;
+}
+
+// Parametric Mixin
+// navigation.less - nav{}
+// .custom-layout(space-between, center);
+.custom-layout(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+// footer.less - #subfooter-content
+//  .footer-content-layout(flex, flex-end)
+.footer-content-layout(@display-flex, @justify-content) {
+  display: @display-flex;
+  justify-content: @justify-content;
+}
