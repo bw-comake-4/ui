@@ -6,7 +6,7 @@
 }
   
     h2 {
-      color: white;
+      color: @font-color;
       width: 1000px;
       padding-top: 16rem;
       padding-bottom: 16rem;
@@ -16,7 +16,7 @@
       letter-spacing: 0.6rem;
       text-align: center;
       text-shadow: 1px 1px 2px #040;
-      font-family: 'Roboto Condensed', sans-serif; 
+      font-family: @roboto-condensed; 
     }
 
     #content {
@@ -24,7 +24,7 @@
       text-align: center;
       color: #222;
       padding-top: 2rem;
-      font-family: 'Roboto Condensed', sans-serif; 
+      font-family: @roboto-condensed; 
       width: 1000px;
       text-align: center;
       margin: 0 auto;
@@ -35,7 +35,7 @@
   font-size: 1rem;
   width:80%;
   text-align: left;
-  font-family: 'Roboto';
+  font-family: '@roboto';
 }
 
 #sub-content h3 {
@@ -73,7 +73,7 @@
   padding-left: 5px;
 }
 
-@media (max-width: 500px) {
+@media @mobile {
   #about-showcase {
     padding-top: 0;
     
