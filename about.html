@@ -9,46 +9,92 @@
 
     
     <title>Co-Make4 | Home Page</title>
-    <!-- <script type = "text/javascript">
-        function displayNextImage() {
-            x = (x === images.length - 1) ? 0 : x + 1;
-            document.getElementById("img").src = images[x];
-        }
-
-        function displayPreviousImage() {
-            x = (x <= 0) ? images.length - 1 : x - 1;
-            document.getElementById("img").src = images[x];
-        }
-
-        function startTimer() {
-            setInterval(displayNextImage, 3000);
-        }
-
-        var images = [], x = -1;
-        images[0] = "./img/image1.jpg";
-        images[1] = "./img/image2.jpg";
-        images[2] = "./img/image3.jpg";
-        images[3] = "./img/image4.jpg";
-    
-    </script> -->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
    </head>
 
-   <!-- <body onload = "startTimer()"> -->
      <body>
     <div id='navbar'>
       <nav>
         <h1><id class="fas fa-chalkboard-teacher"></id> Co-<i>Make4</i></h1>
         <div id="navigation">
-          <a href="index.html">Home</a>
+          <a href="index.html" class="home">Home</a>
           <a href="about.html">About</a>
-          <a href="login.html">Log in</a>
-          <a href="signup.html" class="sign-up">Sign up</a>
+          <a href="https://bw-comake-4.now.sh/">Log in</a>
+          <a href="https://bw-comake-4.now.sh/" class="sign-up">Sign up</a>
         </div>
       </nav>
-      
     </div>
 
+    <div id="about-showcase">
+      <div class="about-sub-showcase"></div>
+      <h2>You're neighborhood hub.</h2>
 
+    </div>
+
+    <div id='content'>
+      <div id="content-heading">
+        <div id="sub-content">
+          <div id="sub-content-01">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed cupiditate, a quae nihil magni facere? Fugit aspernatur cumque tempora iusto vero fuga magnam illum qui neque quibusdam mollitia, labore recusandae.<br /><br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore doloribus reprehenderit vero at laudantium adipisci debitis rerum repudiandae, dolor rem illum voluptatem provident, accusantium quasi laborum tempora consequuntur. Accusamus, fugit.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id culpa corrupti quisquam! Praesentium, velit. Enim nesciunt quis commodi ipsam, libero quo quas. Doloribus ipsa eaque ipsam repellendus illum amet asperiores.</p>
+          </div>
+            <div id="team">
+              <div id='member01'>
+                <img src="./img/elijah.JPG" class="about-img">
+                <p class="about-p">Team Lead</p>
+              </div>
+              <div id='member02'>
+                <img src="./img/sara.JPG" class="about-img"/>
+                <p>Backend</p>
+              </div>
+              <div id='member03'>
+                <img src="./img/ben.JPG" class="about-img"/>
+                <p>Frontend</p>
+              </div>
+              <div id='member04'>
+                <img src="./img/emilio.jpg" class="about-img"/>
+                <p>Frontend</p>
+              </div>
+              <div id='member05'>
+                <img src="./img/joseph.JPG" class="about-img"/>
+                <p>UI</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div id="footer-content">
+        <h1 id="logo"><id class="fas fa-chalkboard-teacher"></id> Co-<i>Make4</i></h1>
+        <div id="sub-footer-content">
+          <div class = "sub-footer">
+            <h4>Company</h4>
+              <ul>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Blog</li>
+              </ul>
+          </div>
+  
+        <div class = "sub-footer">
+        <h4>Resources</h4>
+            <ul>
+              <li>FAQ</li>
+              <li>Contact</li>
+            </ul>
+        </div>
+  
+        <div class = "sub-footer">
+        <h4>Follow Us</h4>
+            <ul>
+              <li>Twitter</li>
+              <li>Facebook</li>
+              <li>Instagram</li>
+            </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

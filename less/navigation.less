@@ -1,43 +1,36 @@
-nav {
-  display: flex;
-  align-items: center;
-  width: auto;
-  max-width: 1000px;
-  text-align: center;
-  margin: 0 auto;
-  justify-content: space-between;
-  padding-top: 0.6rem;
-  padding-bottom: 0.3rem;
-  // background-color: white;  
-}
-
-h1 {
-  color: #00932A;
-  font-size: 1.8rem;
-  font-stretch: expanded;
-}
-
-nav a {
-  text-decoration: none;
-  padding-right: 1rem;
-  color: #555;
-
-}
-
-nav h1 {
-  padding-left: 1rem;
-  text-shadow: 0.3px 0.3px 0.3px #333;
-
-}
-
-
-
 #navbar {
   background-color: white;
   position: sticky;
   top:0;
   z-index: 1;
 
+  nav {
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+    padding-bottom: 0.3rem;
+    // background-color: white;  
+  
+    h1 {
+      color: #00932A;
+      font-size: 1.8rem;
+      font-stretch: expanded;
+      padding-left: 1rem;
+      text-shadow: 0.3px 0.3px 0.3px #333;
+    }
+  
+    a {
+      text-decoration: none;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      color: #555;
+    }
+  }
 }
 
 .sign-up {
@@ -46,8 +39,67 @@ nav h1 {
   padding-left: 1rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
-  color: white;
+  color: white !important;
 }
+
+@media (max-width: 500px) {
+  body {
+    width: 500px;
+  }
+
+  #navbar {
+    display: flex;
+    position: sticky;
+  
+
+
+
+    nav {
+    flex-direction: column;
+    width: 100%;
+
+
+      #navigation {
+        width: 100%;
+
+      }
+
+      h1  {
+        padding-top: 1rem;
+        padding-left: 0;
+  
+        padding-bottom: 1rem;
+      }
+
+
+
+
+      #navigation a{ 
+        // flex-direction: row;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid grey;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+
+    
+      }
+    }
+  }
+
+  .sign-up {
+    padding-left: 0;
+  }
+
+  .home {
+    border-top: 1px solid gray;
+  
+  }
+  
+}
+
 
 
 

@@ -3,7 +3,13 @@
   margin: 0;
   padding: 0;
 }
-nav {
+#navbar {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+#navbar nav {
   display: flex;
   align-items: center;
   width: auto;
@@ -14,25 +20,18 @@ nav {
   padding-top: 0.6rem;
   padding-bottom: 0.3rem;
 }
-h1 {
+#navbar nav h1 {
   color: #00932A;
   font-size: 1.8rem;
   font-stretch: expanded;
-}
-nav a {
-  text-decoration: none;
-  padding-right: 1rem;
-  color: #555;
-}
-nav h1 {
   padding-left: 1rem;
   text-shadow: 0.3px 0.3px 0.3px #333;
 }
-#navbar {
-  background-color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+#navbar nav a {
+  text-decoration: none;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #555;
 }
 .sign-up {
   background: #00932A;
@@ -40,7 +39,81 @@ nav h1 {
   padding-left: 1rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
+  color: white !important;
+}
+@media (max-width: 500px) {
+  body {
+    width: 500px;
+  }
+  #navbar {
+    display: flex;
+    position: sticky;
+  }
+  #navbar nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #navbar nav #navigation {
+    width: 100%;
+  }
+  #navbar nav h1 {
+    padding-top: 1rem;
+    padding-left: 0;
+    padding-bottom: 1rem;
+  }
+  #navbar nav #navigation a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .sign-up {
+    padding-left: 0;
+  }
+  .home {
+    border-top: 1px solid gray;
+  }
+}
+footer {
+  background: #333;
   color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+}
+footer h4 {
+  font-size: 1rem;
+  padding-bottom: 0.6rem;
+}
+footer ul {
+  list-style-type: none;
+  color: #bbb;
+  font-size: 9;
+}
+footer .sub-footer {
+  justify-content: right;
+}
+footer #footer-content {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+#sub-footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+#logo {
+  width: 40%;
+}
+.sub-footer {
+  width: 20%;
+}
+#logo {
+  color: #00932A;
 }
 #showcase {
   background: #333 url('../img/image1.jpg') no-repeat center center / cover;
@@ -55,7 +128,6 @@ nav h1 {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 5rem;
-  /* Overlay */
   position: absolute;
   top: 82px;
   left: 0;
@@ -68,11 +140,10 @@ nav h1 {
   line-height: 25px;
   font-family: 'Roboto Condensed', sans-serif;
   padding-top: 12rem;
-  text-shadow: 2px 2px 3px #000;
   padding-bottom: 3rem;
 }
 #showcase .showcase-content #showcase-box {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 1.3rem 1rem;
 }
 #showcase .showcase-content #showcase-box .connect {
@@ -189,40 +260,194 @@ nav h1 {
   line-height: 1.6;
   font-size: 1rem;
 }
-footer {
-  background: #333;
+@media (max-width: 500px) {
+  #showcase {
+    margin: 0 auto;
+    width: 500px;
+  }
+  #showcase .showcase-content {
+    padding-top: 13rem;
+  }
+  #showcase .showcase-content p.l-heading {
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+  }
+  #showcase .showcase-content #showcase-box {
+    flex-direction: row;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #showcase .showcase-content #showcase-box .address {
+    width: 100%;
+  }
+  #showcase .showcase-content #showcase-box .apt {
+    width: 100%;
+    flex-direction: row;
+  }
+  #showcase .showcase-content #showcase-box .email {
+    width: 100%;
+  }
+  #showcase .showcase-content #showcase-box .connect {
+    text-align: center;
+  }
+  #showcase .showcase-content #showcase-box button.join {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+  #main-content {
+    width: 500px;
+    margin-top: 2rem;
+  }
+  #main-content #subcontent-01 {
+    padding: 0;
+    margin: 0 auto;
+    width: 500px;
+  }
+  #main-content #subcontent-01 h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #main-content #subcontent-01 p {
+    text-align: left;
+    margin: 0 auto;
+    padding-right: 1.5rem;
+  }
+  #main-content #subcontent-01 button {
+    width: 93%;
+    margin-bottom: 1rem;
+  }
+  #main-content #subcontent-02 {
+    display: none;
+  }
+  #subcontent-03 {
+    display: none;
+  }
+  #section-04 img {
+    width: 450px;
+  }
+  #section-04 button {
+    display: none;
+  }
+  footer #footer-content h1 {
+    display: none;
+  }
+  footer #footer-content #sub-footer-content {
+    width: 400px;
+    justify-content: space-between;
+  }
+}
+#about-showcase {
+  background: #333 url('../img/unity.jpg') no-repeat center center / cover;
+  color: #fff;
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
+}
+h2 {
   color: white;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 3rem;
-}
-footer h4 {
-  font-size: 1rem;
-  padding-bottom: 0.6rem;
-}
-footer ul {
-  list-style-type: none;
-  color: #bbb;
-  font-size: 9;
-}
-footer .sub-footer {
-  justify-content: right;
-}
-footer #footer-content {
   width: 1000px;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+  background-color: rgba(0, 0, 0, 0.151);
+  margin: 0 auto;
+  font-size: 3rem;
+  letter-spacing: 0.6rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px #040;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#content {
+  font-size: 3rem;
+  color: #222;
+  padding-top: 2rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 1000px;
+  text-align: center;
   margin: 0 auto;
   display: flex;
 }
-#sub-footer-content {
-  width: 60%;
-  display: flex;
-  justify-content: flex-end;
+#sub-content p {
+  font-size: 1rem;
+  width: 80%;
+  text-align: left;
+  font-family: 'Roboto';
 }
-#logo {
-  width: 40%;
-}
-.sub-footer {
+#sub-content h3 {
+  font-size: 1.6rem;
   width: 20%;
+  color: #999;
+}
+#sub-content-01 {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#team {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3rem;
+  justify-content: space-around;
+  padding-bottom: 3rem;
+}
+.about-img {
+  width: 150px;
+}
+#member01,
+#member02,
+#member03,
+#member04,
+#member05 {
+  border: 1px solid #ddd;
+}
+#member01 p,
+#member02 p,
+#member03 p,
+#member04 p,
+#member05 p {
+  padding-left: 5px;
+}
+@media (max-width: 500px) {
+  #about-showcase {
+    padding-top: 0;
+  }
+  #about-showcase h2 {
+    font-size: 1.6rem;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 1x #000;
+  }
+  #content #content-heading #sub-content #team {
+    flex-direction: column;
+    width: 500px;
+  }
+  #content #content-heading #sub-content #team #member01,
+  #content #content-heading #sub-content #team #member02,
+  #content #content-heading #sub-content #team #member03,
+  #content #content-heading #sub-content #team #member04,
+  #content #content-heading #sub-content #team #member05 {
+    width: 30%;
+    margin: 17px auto;
+  }
+  #content #content-heading #sub-content p {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #content #content-heading #sub-content #sub-content-01 {
+    flex-direction: column;
+    width: 500px;
+    margin: 0;
+  }
+  #content #content-heading #sub-content #sub-content-01 h3 {
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 1.3rem;
+  }
+  #content #content-heading #sub-content #sub-content-01 p {
+    margin: 0 auto;
+    width: 450px;
+  }
 }
 @font-face {
   font-family: 'Roboto';
